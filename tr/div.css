@@ -1,0 +1,17 @@
+.row{
+  display: flex;
+  margin: -10px;
+}
+.one{
+    background-color: aqua;
+    width: 50%;
+}
+.two{
+    background-color: yellow;
+    width: 50%;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
