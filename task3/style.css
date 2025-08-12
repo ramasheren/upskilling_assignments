@@ -1,37 +1,46 @@
 body {
+  margin: 0%;
+  padding: 0%;
   background-color: #161c2e;
   color: white;
-    font-family: "Bitcount Grid Double", system-ui;
+  font-family: "Bitcount Grid Double", system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0.5,
-    "ELSH" 0,
-    "ELXP" 0;
-  }
-.row {
-  display: flex;
-  margin: -2%;
+  font-variation-settings: "slnt" 0, "CRSV" 0.5, "ELSH" 0, "ELXP" 0;
 }
-.rowtxt {
-  width: 50%;
-  background-color: #161c2e;
+.row {
+  width: 100%;
   margin: 0%;
+  position: relative;
 }
 .rowimg {
   width: 50%;
+  height: 100%;
+  background-color: #161c2e;
   margin: 0%;
+  float: left;
+  overflow: hidden;
+}
+.rowtxt {
+  width: 44%;
+  background-color: #161c2e;
+  margin: 0%;
+  float: left;
+  padding: 3%;
+}
+.clr {
+  clear: both;
 }
 img {
+  height: 100%;
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  display: block;
 }
-.content {
+/* .content {
   padding: 10%;
-  padding-top: 0%;
-}
+} */
 h3,
 p {
   opacity: 0.5;
@@ -51,7 +60,7 @@ p {
 button {
   font-size: 1.2em;
   margin: 10px;
-  padding: 12px 25px 12px 25px;
+  padding: 12px 35px 12px 35px;
   color: white;
   border-radius: 25px;
   border-style: solid;
@@ -69,12 +78,11 @@ button {
   color: #ffc90f;
   border: #ffc90f 2px solid;
 }
-h4{
+h4 {
   font-size: 1.7em;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 table {
   width: 100%;
   margin: 20px 0;
