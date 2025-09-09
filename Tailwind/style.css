@@ -1,0 +1,86 @@
+body {
+  box-sizing: border-box;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.slides {
+  display: flex;
+  width: 200%;
+  animation: slide 20s infinite;
+}
+
+.slides img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.slidestext {
+  display: flex;
+  width: 200%;
+  animation: slide 20s infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.slidestext div {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  padding: 13%;
+}
+
+.textslide1 {
+  left: 0;
+}
+
+.textslide2 {
+  left: 50%;
+}
+
+.turquoise {
+  color: #37cfa2;
+}
+
+.bg_turquoise {
+  background-color: #37cfa2;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bg_darkgray {
+  background-color: #333333;
+}
