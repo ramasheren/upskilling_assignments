@@ -1,0 +1,35 @@
+@font-face {
+  font-family: first-try;
+  src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: first-try;
+  box-sizing: border-box;
+}
+
+.cour {
+  height: 75%;
+}
+
+h1,
+h2,
+h3 {
+  color: #24325d;
+    font-weight: bolder;
+}
+
+.cont{
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.coluu:hover h3 {
+  color: var(--bs-primary);
+}
+
+#change{
+    background-color: #24325d;
+}
