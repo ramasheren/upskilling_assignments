@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'bubbly';
+  src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.bubbly {
+  font-family: 'bubbly', sans-serif;
+}
+
+@font-face {
+  font-family: 'bubblyb';
+  src: url("../fonts/Nunito/static/Nunito-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+}
+
+.bubblyb {
+  font-family: 'bubblyb', sans-serif;
+}
+
+@font-face {
+  font-family: 'cursively';
+  src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf)
+    format("truetype");
+    font-weight: normal;
+}
+
+.cursively {
+  font-family: 'cursively', sans-serif;
+}
+
+body {
+  background-color: #f1f8ff;
+  box-sizing: border-box;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-size: 1.25rem !important;
+}
+
+.navbar .nav-link:hover {
+  color: var(--bs-warning);
+}
+
+.navbar .nav-link.active {
+  color: var(--bs-warning);
+}
+
+.navi {
+  background-color: #0f172b !important;
+  padding-left: 4% !important;
+  padding-right: 4% !important;
+}
+
+.bghero {
+  background-color: #0f172b;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.avatar {
+  animation: spin 30s linear infinite;
+  transform-origin: center center;
+  will-change: transform;
+}
+
+button{
+  cursor: pointer;
+}
+
+.cardi{
+  margin: 1.2rem;
+  transition: background-color 0.4s ease; 
+}
+
+.cardi:hover{
+  background-color: var(--bs-warning);
+}
+
+.cardi:hover h3, .cardi:hover p, .cardi:hover i{
+  color: #fff !important;
+}
+
+.long-dash {
+  display:inline-block;
+  width:3em;      
+  height:0.15em;   
+  background:var(--bs-warning);
+  vertical-align:middle;
+}
+
+.v-line {
+  display: inline-block;
+  width: 0.1em;              
+  height: 1.2em;   
+  background: var(--bs-warning); 
+  vertical-align: middle;  
+}
+
+.db{
+  color: #0f172b;
+}
+
+.bigg{
+  font-size: 3.5rem !important;
+}
+
+.try1:active, .try1:focus, .try1:hover{
+  background-color: var(--bs-warning);
+  color: #0f172b !important;
+}
+
+input[name="tab"] {
+  display: none;
+}
+
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"] {
+  color: var(--bs-warning); 
+  border-bottom: 3px solid #ff7b00;
+}
