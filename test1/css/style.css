@@ -1,33 +1,33 @@
 @font-face {
-  font-family: 'bubbly';
+  font-family: "bubbly";
   src: url("../fonts/Nunito/Nunito-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 .bubbly {
-  font-family: 'bubbly', sans-serif;
+  font-family: "bubbly", sans-serif;
 }
 
 @font-face {
-  font-family: 'bubblyb';
+  font-family: "bubblyb";
   src: url("../fonts/Nunito/static/Nunito-ExtraBold.ttf") format("truetype");
   font-style: normal;
 }
 
 .bubblyb {
-  font-family: 'bubblyb', sans-serif;
+  font-family: "bubblyb", sans-serif;
 }
 
 @font-face {
-  font-family: 'cursively';
+  font-family: "cursively";
   src: url(../fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf)
     format("truetype");
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .cursively {
-  font-family: 'cursively', sans-serif;
+  font-family: "cursively", sans-serif;
 }
 
 body {
@@ -73,48 +73,52 @@ body {
   will-change: transform;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-.cardi{
+.cardi {
   margin: 1.2rem;
-  transition: background-color 0.4s ease; 
+  transition: background-color 0.4s ease;
 }
 
-.cardi:hover{
+.cardi:hover {
   background-color: var(--bs-warning);
 }
 
-.cardi:hover h3, .cardi:hover p, .cardi:hover i{
+.cardi:hover h3,
+.cardi:hover p,
+.cardi:hover i {
   color: #fff !important;
 }
 
 .long-dash {
-  display:inline-block;
-  width:3em;      
-  height:0.15em;   
-  background:var(--bs-warning);
-  vertical-align:middle;
+  display: inline-block;
+  width: 3em;
+  height: 0.15em;
+  background: var(--bs-warning);
+  vertical-align: middle;
 }
 
 .v-line {
   display: inline-block;
-  width: 0.1em;              
-  height: 1.2em;   
-  background: var(--bs-warning); 
-  vertical-align: middle;  
+  width: 0.1em;
+  height: 1.2em;
+  background: var(--bs-warning);
+  vertical-align: middle;
 }
 
-.db{
+.db {
   color: #0f172b;
 }
 
-.bigg{
+.bigg {
   font-size: 3.5rem !important;
 }
 
-.try1:active, .try1:focus, .try1:hover{
+.try1:active,
+.try1:focus,
+.try1:hover {
   background-color: var(--bs-warning);
   color: #0f172b !important;
 }
@@ -126,6 +130,15 @@ input[name="tab"] {
 #tab1:checked ~ .tabs label[for="tab1"],
 #tab2:checked ~ .tabs label[for="tab2"],
 #tab3:checked ~ .tabs label[for="tab3"] {
-  color: var(--bs-warning); 
+  color: var(--bs-warning);
   border-bottom: 3px solid #ff7b00;
+}
+
+.endi:hover {
+  color: var(--bs-warning) !important;
+  background-color: #fff;
+}
+
+.endi {
+  transition: color 0.4s ease, background-color 0.4s ease;
 }
