@@ -142,3 +142,17 @@ input[name="tab"] {
 .endi {
   transition: color 0.4s ease, background-color 0.4s ease;
 }
+
+.hid {
+  display: none;
+  transition: opacity 0.4s ease;
+}
+
+.hivi:hover .hid {
+  display: inline;
+  margin-bottom: 0%;
+}
+
+.hivi:hover .hivi {
+  padding-bottom: 0% !important;
+}
