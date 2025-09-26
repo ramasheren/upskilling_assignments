@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="container text-center m-5">
+    <h1>Contact List</h1>
+  </div>
+
+  <div class="container px-4 text-center">
+    <div class="row gx-5">
+      <div class="col">
+        <div class="p-3">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nameIp" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="nameIp">
+            </div>
+            <div class="mb-3">
+              <label for="emailIp" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="emailIp" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="phoneIp" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="phoneIp">
+            </div>
+            <div class="mb-3">
+              <label for="noteIp" class="form-label">Note</label>
+              <textarea type="text" class="form-control" id="noteIp"></textarea>
+              <div class="form-text">Not required.</div>
+            </div>
+            <button id="add" type="button" class="btn btn-primary" onclick="addContact()">Add Contact</button>
+          </form>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-3">
+          <table class="table table-striped">
+            <thead>
+              <th>#</th>
+              <th>Full Name</th>
+              <th>Email Address</th>
+              <th>Phone Number</th>
+              <th>Note</th>
+            </thead>
+            <tbody id="tableB">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/contact.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
